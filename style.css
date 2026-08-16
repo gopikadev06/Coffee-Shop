@@ -1,0 +1,177 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Horizontal assigned*/
+  align-items: center; /* Vertically assigned*/
+  padding: 20px 50px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #5c4033;
+}
+nav a:hover {
+    color: #c47a44;
+    cursor: pointer;
+}
+
+.hero {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("img/coffee.jpg");
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero a {
+        background-color: #5c4033;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 15px;
+    }
+.menu {
+    padding: 50px;
+    text-align: center;
+}
+
+.menu-container {
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+}
+
+.menu-card {
+    width: 220px;
+    padding: 25px;
+    background-color: #f5eee8;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px gray;
+}
+.menu-card span {
+    font-weight: bold;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    transform: 0.3s;
+    box-shadow: 5px 5px 5px 10px wheat;
+}
+@media(max-width:768px){
+    .media-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    nav {
+        padding: 20px;
+    }
+    nav a {
+        margin-left: 10px;
+    }
+}
+
+.about {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.about-image img {
+    width: 350px;
+    border-radius: 15px;
+}
+
+.about-text {
+    max-width: 450px;
+    text-align: left;
+}
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact text {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact button {
+    padding: 12px;
+    background-color: #5c4033;
+    columns: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border: 2px solid #5c4033;
+}
+
+.contact button:hover {
+    background-color: #c47a44;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* .menu {
+    background-color: #EAD7D0;
+}
+
+.about {
+    background-color: #F3E3DC;
+}
+
+.contact {
+    background-color: #E8D5C4;
+}
+
+.footer {
+    background-color: #3E2723;
+} */
